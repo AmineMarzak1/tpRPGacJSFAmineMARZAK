@@ -8,13 +8,13 @@
     </h:head>
 
     <h:body>
-        <h1>Application&gt;affichage_2</h1>
+        <h1>Application&gt;affichage_1</h1>
         Les nombres : <br/>
         <ui:repeat value="#{bean.nombresSuivants}" var="n" varStatus="status">
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
         <h:form>
-            <h:commandLink action="formulaire_2" value="Saisir un autre nombre"/>
+            <h:link outcome="formulaire_2" value="Saisir un autre nombre"/>
         </h:form>
     </h:body>
 </html>
